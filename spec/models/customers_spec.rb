@@ -15,7 +15,7 @@ RSpec.describe Customer, type: :model do
 
   it '#full_name - Sobrescrevendo atributo' do
     customer = create(:customer, name: 'Mateus')
-    # customer = build(:customer, name: 'Mateus')
+
     expect(customer.full_name).to eq('Sr. Mateus')
   end
 
@@ -24,6 +24,7 @@ RSpec.describe Customer, type: :model do
     expect(customer.vip).to be_truthy
     expect(customer.days_to_pay).to eq(30)
   end
+
   it 'Herança: customer_default' do
     customer = create(:customer_default)
     expect(customer.vip).to be(false)
@@ -53,5 +54,4 @@ RSpec.describe Customer, type: :model do
     expect(customer.gender).to eq('M')
     expect(customer.vip).to be_truthy
   end
-
 end

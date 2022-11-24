@@ -2,13 +2,16 @@ FactoryBot.define do
   factory :customer, aliases: [:user] do
     transient do
       upcased { false }
+      qtt_orders { 3 }
     end
 
     name { Faker::Name.name }
-    email { Faker::Internet.email }
+    address { Faker::Address.street_address }
+
+    sequence(:email, '0') { |n| "meu_email-#{n}@gmail.com" }
 
     trait :male do
-      gender  { 'M' }
+      gender { 'M' }
     end
 
     trait :female do
@@ -25,6 +28,13 @@ FactoryBot.define do
       days_to_pay { 15 }
     end
 
+    trait :with_orders do
+      after(:create) do |customer, evaluator|
+        create_list(:order, evaluator.qtt_orders, customer: customer)
+      end
+    end
+
+    factory :customer_with_orders, traits: [:with_orders]
     factory :customer_male, traits: [:male]
     factory :customer_female, traits: [:female]
     factory :customer_vip, traits: [:vip]
@@ -33,7 +43,6 @@ FactoryBot.define do
     factory :customer_female_vip, traits: %i[female vip]
     factory :customer_male_default, traits: %i[male default]
     factory :customer_female_default, traits: %i[female default]
-
 
     after(:create) do |customer, evaluator|
       customer.name.upcase! if evaluator.upcased
