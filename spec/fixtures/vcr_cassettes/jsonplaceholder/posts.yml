@@ -1,0 +1,225 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: "<API_URL>/posts/50"
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 25 Nov 2022 13:34:56 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      X-Ratelimit-Limit:
+      - '1000'
+      X-Ratelimit-Remaining:
+      - '999'
+      X-Ratelimit-Reset:
+      - '1669383336'
+      Vary:
+      - Origin, Accept-Encoding
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Cache-Control:
+      - max-age=43200
+      Pragma:
+      - no-cache
+      Expires:
+      - "-1"
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"14d-XND1VIG+pZHF+RVMSi1awppS1XI"
+      Via:
+      - 1.1 vegur
+      Cf-Cache-Status:
+      - MISS
+      Server-Timing:
+      - cf-q-config;dur=6.0000020312145e-06
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=vgfHT5E7pQLDNfLayIAByAM8ei6WsNPp8CkEkWWCe3WzJqt7nbVKZKLFNQkCUpDc8wQXOUi4LQThMzgz0VPivYRwKksFYjTybF8cta%2FlMz3EfRgJjLVZi8sHpaCrgOVdTl0%2BwUsdvgxpVt%2BjQfbI"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 76fac3c21d82a561-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+          "userId": 5,
+          "id": 50,
+          "title": "repellendus qui recusandae incidunt voluptates tenetur qui omnis exercitationem",
+          "body": "error suscipit maxime adipisci consequuntur recusandae\nvoluptas eligendi et est et voluptates\nquia distinctio ab amet quaerat molestiae et vitae\nadipisci impedit sequi nesciunt quis consectetur"
+        }
+  recorded_at: Fri, 25 Nov 2022 13:34:57 GMT
+- request:
+    method: get
+    uri: "<API_URL>/posts/51"
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 25 Nov 2022 13:55:54 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      X-Ratelimit-Limit:
+      - '1000'
+      X-Ratelimit-Remaining:
+      - '999'
+      X-Ratelimit-Reset:
+      - '1669384596'
+      Vary:
+      - Origin, Accept-Encoding
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Cache-Control:
+      - max-age=43200
+      Pragma:
+      - no-cache
+      Expires:
+      - "-1"
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"ec-KSZLw8b2VyQH0CoS7Z65vSSln78"
+      Via:
+      - 1.1 vegur
+      Cf-Cache-Status:
+      - MISS
+      Server-Timing:
+      - cf-q-config;dur=7.0000023697503e-06
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=h1XLmBK%2BMktm3aw%2Fryt9TYBfek1GsNFb5QJp5rzlpmS9yswDDtxAvTBLDxOBkBoeVVw9%2FyIfiD5u87tTZ0nmnXASlTCbSto37bt6%2BJqa0ADkoQXcra85KtulD74%2Bhj15s2NZYdEXa4%2Bn0lO%2BY03p"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 76fae2798e5f4cdf-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+          "userId": 6,
+          "id": 51,
+          "title": "soluta aliquam aperiam consequatur illo quis voluptas",
+          "body": "sunt dolores aut doloribus\ndolore doloribus voluptates tempora et\ndoloremque et quo\ncum asperiores sit consectetur dolorem"
+        }
+  recorded_at: Fri, 25 Nov 2022 13:55:55 GMT
+- request:
+    method: get
+    uri: "<API_URL>/posts/52"
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 25 Nov 2022 13:56:35 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      X-Ratelimit-Limit:
+      - '1000'
+      X-Ratelimit-Remaining:
+      - '998'
+      X-Ratelimit-Reset:
+      - '1669384596'
+      Vary:
+      - Origin, Accept-Encoding
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Cache-Control:
+      - max-age=43200
+      Pragma:
+      - no-cache
+      Expires:
+      - "-1"
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"11d-WmrD+HyY132p7brEZQ1rec9ZC6E"
+      Via:
+      - 1.1 vegur
+      Cf-Cache-Status:
+      - MISS
+      Server-Timing:
+      - cf-q-config;dur=4.9999944167212e-06
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=TG2%2B2JjwzQ07dXl0%2Fpf6kgevG1CxI5Ej4zCaciNTGpuVByA7Dlv1eWxYtRLAH4xCdu5gSKK4CdIj80bxnjQosrzKJhZriy9grcwecbker%2FGBkuDNnausPwbysCZ6T8HkWDhI8BbCi0OJKWLv8zUU"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 76fae375488a51ba-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+          "userId": 6,
+          "id": 52,
+          "title": "qui enim et consequuntur quia animi quis voluptate quibusdam",
+          "body": "iusto est quibusdam fuga quas quaerat molestias\na enim ut sit accusamus enim\ntemporibus iusto accusantium provident architecto\nsoluta esse reprehenderit qui laborum"
+        }
+  recorded_at: Fri, 25 Nov 2022 13:56:35 GMT
+recorded_with: VCR 6.1.0

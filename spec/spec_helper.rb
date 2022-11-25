@@ -17,10 +17,20 @@
 # webmock gem
 require 'webmock/rspec'
 
+# vcr config
+VCR.configure do |config|
+  config.cassette_library_dir = 'spec/fixtures/vcr_cassettes'
+  config.hook_into :webmock
+  config.configure_rspec_metadata!
+  config.filter_sensitive_data('<API_URL>') { 'https://jsonplaceholder.typicode.com' }
+end
+
 RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
   # assertions if you prefer.
+
+  config.order = :random
 
   # FactoryBot Lint
   config.before(:suite) do
