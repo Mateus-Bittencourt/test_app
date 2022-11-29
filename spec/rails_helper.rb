@@ -34,6 +34,9 @@ rescue ActiveRecord::PendingMigrationError => e
 end
 RSpec.configure do |config|
 
+  # devise
+  config.include Devise::Test::ControllerHelpers, type: :controller
+
   # Sholda matchers
   Shoulda::Matchers.configure do |config|
     config.integrate do |with|
