@@ -36,6 +36,7 @@ RSpec.configure do |config|
 
   # devise
   config.include Devise::Test::ControllerHelpers, type: :controller
+  config.include Warden::Test::Helpers
 
   # Sholda matchers
   Shoulda::Matchers.configure do |config|
