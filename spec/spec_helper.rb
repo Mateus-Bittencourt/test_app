@@ -41,7 +41,7 @@ end
 
 # Capybara.javascript_driver = :chrome
 
-Capybara.default_max_wait_time = 5
+# Capybara.default_max_wait_time = 5
 
 RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate
