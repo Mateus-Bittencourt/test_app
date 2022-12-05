@@ -45,6 +45,8 @@ group :development, :test do
   gem 'rails-controller-testing'
   gem 'rspec-rails', '~> 3.6'
   # gem 'selenium-webdriver', '~> 3.6.0'
+  gem 'json_matchers'
+  gem 'rspec-json_expectations'
   gem 'shoulda-matchers', '~> 3.1'
   gem 'vcr'
   gem 'webmock'

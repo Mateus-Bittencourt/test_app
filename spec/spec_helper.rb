@@ -19,6 +19,12 @@ require 'webmock/rspec'
 
 # require 'capybara/rails'
 
+require 'rspec/json_expectations'
+
+require 'json_matchers/rspec'
+
+JsonMatchers.schema_root = 'spec/support/api/schemas'
+
 # vcr config
 VCR.configure do |config|
   config.cassette_library_dir = 'spec/fixtures/vcr_cassettes'
